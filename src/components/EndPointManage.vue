@@ -60,9 +60,9 @@
           </div>
         </form>
       </article>
-      <article>
-        <!--<sync-endpoints></sync-endpoints>-->
-      </article>
+      <!--<article>
+        <sync-endpoints></sync-endpoints>
+      </article>-->
     </details>
 
   </div>
