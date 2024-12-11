@@ -1,6 +1,6 @@
 <template>
   <h1 class="max-w-[30rem] mx-auto">
-    <img src="https://emojicdn.elk.sh/📲" alt="logo" class="h-[1.5rem]"> Files
+    <img src="https://emojicdn.elk.sh/📲" alt="logo" class="h-[1.5rem]"/> Files
   </h1>
 
   <div class="max-w-[30rem] mx-auto">
@@ -17,7 +17,7 @@
   </div>
 
   <footer class="text-center text-xs py-[2rem] opacity-80">
-      <a href="https://github.com/jw-12138/r2-uploader">Credits</a></span>
+      <a href="https://github.com/jw-12138/r2-uploader">Credits</a>
   </footer>
 </template>
 
