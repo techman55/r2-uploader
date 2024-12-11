@@ -61,7 +61,7 @@
         </form>
       </article>
       <article>
-        <sync-endpoints></sync-endpoints>
+        <!--<sync-endpoints></sync-endpoints>-->
       </article>
     </details>
 
