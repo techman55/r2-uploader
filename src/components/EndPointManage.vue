@@ -1,7 +1,7 @@
 <template>
   <div>
     <details :open="panelOpen === '1'" id="panel">
-      <summary class='font-bold italic'>
+      <summary class='font-bold italic hidden'>
         Endpoints
       </summary>
       <article>
