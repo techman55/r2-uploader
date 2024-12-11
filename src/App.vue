@@ -1,6 +1,6 @@
 <template>
   <h1 class="max-w-[30rem] mx-auto">
-    <img src="https://emojicdn.elk.sh/🗄️" alt="logo" class="h-[1.5rem]"> R2 Uploader
+    <img src="https://emojicdn.elk.sh/📲" alt="logo" class="h-[1.5rem]"> Files
   </h1>
 
   <div class="max-w-[30rem] mx-auto">
@@ -17,10 +17,7 @@
   </div>
 
   <footer class="text-center text-xs py-[2rem] opacity-80">
-    <span>Made by <a href="https://github.com/jw-12138">jw-12138</a> with ❤️
-      <br>
-      <a href="/setup-guide/">Setup Guide</a> | 
-      <a href="https://github.com/jw-12138/r2-uploader">Open Source</a></span>
+      <a href="https://github.com/jw-12138/r2-uploader">Credits</a></span>
   </footer>
 </template>
 
