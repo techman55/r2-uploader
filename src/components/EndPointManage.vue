@@ -34,7 +34,7 @@
             {{ endpointActionText }} &nbsp;
           </div>
           <div>
-            <label for="" class="text-sm">Files Link (would have been provided)</label>
+            <label for="" class="text-sm">Link ID</label>
             <input type="text" placeholder="paste into this box" v-model="newEndpoint" class="text-xs" required>
           </div>
           <div>
@@ -80,7 +80,7 @@ let { endPointPulled } = storeToRefs(statusStore)
 
 let endPoint = ref('')
 let apiKey = ref('')
-let btnText = ref('Save To LocalStorage')
+let btnText = ref('Save and Connect')
 let btnDisabled = ref(false)
 let endPointList = ref([])
 let panelOpen = ref('1')
