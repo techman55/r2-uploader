@@ -7,14 +7,10 @@
       <article>
         <form action="javascript:" class="mb-0">
           <div class="pb-2 text-xs opacity-80">
-            <span v-show="endPointList.length === 1">You have 1 endpoint, and it is selected.</span>
+            <span v-show="endPointList.length === 1">You have 1 saved link, and it is selected.</span>
             <span v-show="endPointList.length > 1">
-            Choose between different endpoints, {{ 'you have ' + endPointList.length + ' endpoints' }}
+            Choose between different links, {{ 'you have ' + endPointList.length + ' links' }}
           </span>
-          </div>
-          <div v-show="endPointList.length === 0" class="text-sm">
-            You need Cloudflare Workers to upload files to Cloudflare R2. Have a look at the
-            <a href="/setup-guide/" class="underline">setup guide</a>.
           </div>
           <div v-for="item in endPointList" class="flex mt-2">
             <input type="radio" name="current_endpoint" :id="item.endPoint" :data-id="item.endPoint" :checked="item.endPoint === endPoint"
@@ -38,15 +34,15 @@
             {{ endpointActionText }} &nbsp;
           </div>
           <div>
-            <label for="" class="text-sm">Workers Endpoint</label>
-            <input type="text" placeholder="https://..." v-model="newEndpoint" class="text-xs" required>
+            <label for="" class="text-sm">Files Link (would have been provided)</label>
+            <input type="text" placeholder="paste into this box" v-model="newEndpoint" class="text-xs" required>
           </div>
           <div>
-            <label for="api_key" class="text-sm">Workers Endpoint API Key</label>
-            <input type="password" placeholder="treat it like your browser history" v-model="newApiKey" required
+            <label for="api_key" class="text-sm">Password</label>
+            <input type="password" placeholder="password" v-model="newApiKey" required
                    id="api_key" class="text-xs">
           </div>
-          <div>
+          <!--<div>
             <label for="custom_domain" class="text-sm">Custom Domain (Optional)</label>
             <input type="text" placeholder="no need for the https:// prefix" v-model="newCustomDomain"
                    id="custom_domain"
@@ -55,7 +51,7 @@
               Use your own domain name to access the files instead of <code
               class="text-black dark:text-white">&lt;bucket&gt;.&lt;user&gt;.workers.dev</code>.
             </div>
-          </div>
+          </div>-->
           <div class="text-center mt-4">
             <button class="inline-block w-auto text-sm mb-0" :disabled="btnDisabled" type="submit"
                     style="padding: .3rem 1rem">
@@ -252,7 +248,7 @@ function restorePanelOpenStatus() {
   if (status === '1') {
     panelOpen.value = '1'
   } else {
-    panelOpen.value = '0'
+    panelOpen.value = '1'
   }
 }
 
