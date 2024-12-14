@@ -42,16 +42,12 @@
             <input type="password" placeholder="password" v-model="newApiKey" required
                    id="api_key" class="text-xs">
           </div>
-          <!--<div>
+          <div>
             <label for="custom_domain" class="text-sm">Custom Domain (Optional)</label>
             <input type="text" placeholder="no need for the https:// prefix" v-model="newCustomDomain"
                    id="custom_domain"
                    style="margin-bottom: .5rem" class="text-xs">
-            <div class="opacity-70 text-xs leading-4 mb-8">
-              Use your own domain name to access the files instead of <code
-              class="text-black dark:text-white">&lt;bucket&gt;.&lt;user&gt;.workers.dev</code>.
-            </div>
-          </div>-->
+          </div>
           <div class="text-center mt-4">
             <button class="inline-block w-auto text-sm mb-0" :disabled="btnDisabled" type="submit"
                     style="padding: .3rem 1rem">
